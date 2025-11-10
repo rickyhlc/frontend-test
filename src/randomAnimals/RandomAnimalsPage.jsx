@@ -10,7 +10,7 @@ export default function RandomAnimals() {
   }
 
   return (
-    <div className="h-full flex items-center justify-center gap-10">
+    <div className="h-full flex flex-col items-center justify-center gap-10">
       {connected ? (
         <Animal/>
       ) : (

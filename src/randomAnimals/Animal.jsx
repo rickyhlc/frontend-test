@@ -1,16 +1,13 @@
-import useWebSocket, { ReadyState } from 'react-use-websocket';
-
-const SOCKET_URL = "wss://rickyzero-backend.vercel.app:8080/";
+import { useMessageListener } from "./MessageListener";
 
 export default function Animal() {
 
-  const { lastMessage } = useWebSocket(SOCKET_URL);
+  const { message: currentAnimal } = useMessageListener();
   
-
   return (
-    <div className="h-full flex items-center justify-center">
-      <div>Current animal is</div>
-      <div className="text-lg bold text-blue-400">{lastMessage}</div>
+    <div className="h-full flex flex-col items-center justify-center">
+      <div>The current animal is:</div>
+      <div className="text-2xl font-bold text-blue-400 mt-2">{currentAnimal}</div>
     </div>
   )
 }
