@@ -1,6 +1,6 @@
 import useWebSocket, { ReadyState } from 'react-use-websocket';
 
-const SOCKET_URL = "wss://localhost:8080";
+const SOCKET_URL = "wss://rickyzero.vercel.app:8080";
 
 export default function Animal() {
 
