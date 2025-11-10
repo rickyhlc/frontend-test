@@ -14,7 +14,10 @@ export default function RandomAnimals() {
       {connected ? (
         <Animal/>
       ) : (
-        <button className="mainBtn" onClick={handleConnect}>Get Animal</button>
+        <>
+          <div>Click the button to get random animals</div>
+          <button className="mainBtn" onClick={handleConnect}>Get Animal</button>
+        </>
       )}
     </div>
   )
