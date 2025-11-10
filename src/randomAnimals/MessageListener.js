@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 
-
-// const SOCKET_URL = "wss://rickyzero-backend.vercel.app:8080/";
-const SOCKET_URL = "ws://localhost:8080/";
+const SOCKET_URL = "ws://rickyzero-backend.vercel.app:8080/";
 
 export function useMessageListener() {
 
