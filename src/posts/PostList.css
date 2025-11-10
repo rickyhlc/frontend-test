@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+li {
+  display: inline-block;
+  margin-left: 0.5rem;
+  cursor: default;
+  &:hover {
+    @apply text-blue-200;
+  }
+  &:active {
+    @apply text-blue-300;
+  }
+  &.disabled, &.selected {
+    @apply text-gray-500;
+  }
+}
